@@ -1,0 +1,47 @@
+* {
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+    font-family: 'Montserrat',Verdana,sans-serif;
+    font-weight: bolder;
+  }
+  body {
+    background:url("https://img.freepik.com/free-photo/close-up-briefcase_1098-3090.jpg?w=826&t=st=1662619324~exp=1662619924~hmac=a507947b442e151e0ea1af36f9f667adf459af8e9834e4e5851646105c4aef75");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  header {
+    text-align:center;
+    line-height:1.2;
+    border-bottom:2px solid rgb(50,60,100);
+    margin:20px;
+    padding:15px;
+    color: white;
+  }
+  ::selection {
+    background-color: rgb(50, 60, 120);
+    color: white;
+  }
+  section {
+    background:url("https://img.freepik.com/free-photo/close-up-briefcase_1098-3090.jpg?w=826&t=st=1662619324~exp=1662619924~hmac=a507947b442e151e0ea1af36f9f667adf459af8e9834e4e5851646105c4aef75");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:70%;
+    border: 2px solid rgb(40,60,100);
+    border-radius: 1%;
+    margin: 50px auto;
+  }
+  form {
+    width:80%;
+    margin: 0 auto;
+    padding: 25px 0;
+  }
+div,input,select,textarea {
+    padding:10px 0px;
+    margin:10px 0px;
+    width: 100%;
+    resize: none;
+}
+input[type="radio"],input[type="checkbox"] {
+    width: auto;
+}
