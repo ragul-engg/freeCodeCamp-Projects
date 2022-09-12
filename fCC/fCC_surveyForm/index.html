@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="title">Job Application Form</h>
+        <p id="description" style="font-size:20px;">A survey form for getting metadata from job seekers...</p>
+    </header>
+    <section>
+      <form id="survey-form">
+        <div>
+            <label id="name-label" for="name">Name <input type="text" required id="name" placeholder="Your Name goes here"/></label>
+        </div>
+        <div>
+            <label id="email-label" for="email">E-Mail <input type="email" required id="email" placeholder="Your E-mail goes here"/></label>
+        </div>
+        <div>
+            <label id="number-label" id="number">Age<input type="number" required id="number" placeholder="Your Age goes here" min="18" max="55"/></label>
+        </div>
+        <div>
+            <label for="dropdown">Designation</label><br>
+            <select name="dropdown" id="dropdown">
+                <option value="">(select one)</option>
+                <option value="SDE">Software Developer</option>
+                <option value="Software Tester">Software Tester</option>
+                <option value="DB Admin">DataBase Admin</option>
+                <option value="ProjectManager">Project Manager</option>
+            </select>
+        </div>
+        <div>
+            Interested in <br>
+            <input type="radio" id="on-site" name="interest" value="on-site"><label for="on-site">   On-Site</label>
+            <input type="radio" id="remote" name="interest" value="remote"><label for="remote">   Remote</label>
+            <input type="radio" name="interest" id="part-time" value="part-time"><label for="part-time">   Part-Time</label>
+        </div>
+        <div>
+            Languages known <br>
+            <input type="checkbox" id="C" name="lang" value="C"><label for="C">   C</label>
+            <input type="checkbox" id="C++" name="lang" value="C++"><label for="C++">   C++</label>
+            <input type="checkbox" name="lang" id="Java" value="Java"><label for="Java">   Java</label>
+            <input type="checkbox" name="lang" id="Python" value="Python"><label for="Python">   Python</label>
+            <input type="checkbox" name="lang" id="JS" value="JavaScript"><label for="JS">   JavaScript</label>
+            <input type="checkbox" name ="lang" id="Kotlin" value="Kotlin"><label for="Kotlin">   Kotlin</label>
+        </div>
+        <div>
+            <p>Add your Bio here</p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Bio goes here..." style="height: 120px;"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Submit Form" id="submit">
+        </div>
+      </form>
+    </section>
+</body>
+</html>
